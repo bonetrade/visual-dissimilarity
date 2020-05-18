@@ -1,0 +1,577 @@
+training:
+    epochs: 1000
+    early_stop: 50
+    learning_rate: 0.00375
+    learning_rate_warmup_epochs: 6
+    optimizer:
+        type: adam
+
+input_features:
+    -
+        name: ref.11324.dh
+        type: numerical
+        norm: batch
+        preprocessing:
+            normalization: zscore
+        loss:
+            type: mean_squared_error
+    -
+        name: ref.afr.f.moraitas
+        type: numerical
+        norm: batch
+        preprocessing:
+            normalization: zscore
+        loss:
+            type: mean_squared_error
+    -
+        name: ref.african.in.mexico.graveyard.sjn001
+        type: numerical
+        norm: batch
+        preprocessing:
+            normalization: zscore
+        loss:
+            type: mean_squared_error
+    -
+        name: ref.african.in.mexico.graveyard.sjn002
+        type: numerical
+        norm: batch
+        preprocessing:
+            normalization: zscore
+        loss:
+            type: mean_squared_error
+    -
+        name: ref.african.in.mexico.graveyard.sjn003
+        type: numerical
+        norm: batch
+        preprocessing:
+            normalization: zscore
+        loss:
+            type: mean_squared_error
+    -
+        name: ref.asian.f.moraitas
+        type: numerical
+        norm: batch
+        preprocessing:
+            normalization: zscore
+        loss:
+            type: mean_squared_error
+    -
+        name: ref.asian.f.woo
+        type: numerical
+        norm: batch
+        preprocessing:
+            normalization: zscore
+        loss:
+            type: mean_squared_error
+    -
+        name: ref.asian.m.woo
+        type: numerical
+        norm: batch
+        preprocessing:
+            normalization: zscore
+        loss:
+            type: mean_squared_error
+    -
+        name: ref.cas.fig.4.1.afr.am.f
+        type: numerical
+        norm: batch
+        preprocessing:
+            normalization: zscore
+        loss:
+            type: mean_squared_error
+    -
+        name: ref.cas.fig.4.1.afr.am.m
+        type: numerical
+        norm: batch
+        preprocessing:
+            normalization: zscore
+        loss:
+            type: mean_squared_error
+    -
+        name: ref.cas.fig.4.2.afr.f
+        type: numerical
+        norm: batch
+        preprocessing:
+            normalization: zscore
+        loss:
+            type: mean_squared_error
+    -
+        name: ref.cas.fig.4.2.afr.m
+        type: numerical
+        norm: batch
+        preprocessing:
+            normalization: zscore
+        loss:
+            type: mean_squared_error
+    -
+        name: ref.cas.fig.4.3.euro.am.f
+        type: numerical
+        norm: batch
+        preprocessing:
+            normalization: zscore
+        loss:
+            type: mean_squared_error
+    -
+        name: ref.cas.fig.4.3.euro.am.m
+        type: numerical
+        norm: batch
+        preprocessing:
+            normalization: zscore
+        loss:
+            type: mean_squared_error
+    -
+        name: ref.cil.2.yucha2017.asian.m
+        type: numerical
+        norm: batch
+        preprocessing:
+            normalization: zscore
+        loss:
+            type: mean_squared_error
+    -
+        name: ref.cil.3.yucha2017.prob.japanese.prob.m
+        type: numerical
+        norm: batch
+        preprocessing:
+            normalization: zscore
+        loss:
+            type: mean_squared_error
+    -
+        name: ref.cil.4.yucha2017.prob.japanese.m
+        type: numerical
+        norm: batch
+        preprocessing:
+            normalization: zscore
+        loss:
+            type: mean_squared_error
+    -
+        name: ref.cil.6.yucha2017.prob.japanese.f
+        type: numerical
+        norm: batch
+        preprocessing:
+            normalization: zscore
+        loss:
+            type: mean_squared_error
+    -
+        name: ref.cil.7.yucha2017.m.asian
+        type: numerical
+        norm: batch
+        preprocessing:
+            normalization: zscore
+        loss:
+            type: mean_squared_error
+    -
+        name: ref.csu.3.yucha2017.m.asian
+        type: numerical
+        norm: batch
+        preprocessing:
+            normalization: zscore
+        loss:
+            type: mean_squared_error
+    -
+        name: ref.dh.skull.1
+        type: numerical
+        norm: batch
+        preprocessing:
+            normalization: zscore
+        loss:
+            type: mean_squared_error
+    -
+        name: ref.dh.skull.10
+        type: numerical
+        norm: batch
+        preprocessing:
+            normalization: zscore
+        loss:
+            type: mean_squared_error
+    -
+        name: ref.dh.skull.11
+        type: numerical
+        norm: batch
+        preprocessing:
+            normalization: zscore
+        loss:
+            type: mean_squared_error
+    -
+        name: ref.dh.skull.12
+        type: numerical
+        norm: batch
+        preprocessing:
+            normalization: zscore
+        loss:
+            type: mean_squared_error
+    -
+        name: ref.dh.skull.13
+        type: numerical
+        norm: batch
+        preprocessing:
+            normalization: zscore
+        loss:
+            type: mean_squared_error
+    -
+        name: ref.dh.skull.14
+        type: numerical
+        norm: batch
+        preprocessing:
+            normalization: zscore
+        loss:
+            type: mean_squared_error
+    -
+        name: ref.dh.skull.15
+        type: numerical
+        norm: batch
+        preprocessing:
+            normalization: zscore
+        loss:
+            type: mean_squared_error
+    -
+        name: ref.dh.skull.17
+        type: numerical
+        norm: batch
+        preprocessing:
+            normalization: zscore
+        loss:
+            type: mean_squared_error
+    -
+        name: ref.dh.skull.18
+        type: numerical
+        norm: batch
+        preprocessing:
+            normalization: zscore
+        loss:
+            type: mean_squared_error
+    -
+        name: ref.dh.skull.19
+        type: numerical
+        norm: batch
+        preprocessing:
+            normalization: zscore
+        loss:
+            type: mean_squared_error
+    -
+        name: ref.dh.skull.2
+        type: numerical
+        norm: batch
+        preprocessing:
+            normalization: zscore
+        loss:
+            type: mean_squared_error
+    -
+        name: ref.dh.skull.20
+        type: numerical
+        norm: batch
+        preprocessing:
+            normalization: zscore
+        loss:
+            type: mean_squared_error
+    -
+        name: ref.dh.skull.3
+        type: numerical
+        norm: batch
+        preprocessing:
+            normalization: zscore
+        loss:
+            type: mean_squared_error
+    -
+        name: ref.dh.skull.4
+        type: numerical
+        norm: batch
+        preprocessing:
+            normalization: zscore
+        loss:
+            type: mean_squared_error
+    -
+        name: ref.dh.skull.5
+        type: numerical
+        norm: batch
+        preprocessing:
+            normalization: zscore
+        loss:
+            type: mean_squared_error
+    -
+        name: ref.dh.skull.6
+        type: numerical
+        norm: batch
+        preprocessing:
+            normalization: zscore
+        loss:
+            type: mean_squared_error
+    -
+        name: ref.dh.skull.7
+        type: numerical
+        norm: batch
+        preprocessing:
+            normalization: zscore
+        loss:
+            type: mean_squared_error
+    -
+        name: ref.dh.skull.8
+        type: numerical
+        norm: batch
+        preprocessing:
+            normalization: zscore
+        loss:
+            type: mean_squared_error
+    -
+        name: ref.dh.skull.9
+        type: numerical
+        norm: batch
+        preprocessing:
+            normalization: zscore
+        loss:
+            type: mean_squared_error
+    -
+        name: ref.female.afr.american
+        type: numerical
+        norm: batch
+        preprocessing:
+            normalization: zscore
+        loss:
+            type: mean_squared_error
+    -
+        name: ref.female.asian
+        type: numerical
+        norm: batch
+        preprocessing:
+            normalization: zscore
+        loss:
+            type: mean_squared_error
+    -
+        name: ref.female.european
+        type: numerical
+        norm: batch
+        preprocessing:
+            normalization: zscore
+        loss:
+            type: mean_squared_error
+    -
+        name: ref.fountain.street.male
+        type: numerical
+        norm: batch
+        preprocessing:
+            normalization: zscore
+        loss:
+            type: mean_squared_error
+    -
+        name: ref.london.christopher.le.stocks.female
+        type: numerical
+        norm: batch
+        preprocessing:
+            normalization: zscore
+        loss:
+            type: mean_squared_error
+    -
+        name: ref.magdalen.winchester
+        type: numerical
+        norm: batch
+        preprocessing:
+            normalization: zscore
+        loss:
+            type: mean_squared_error
+    -
+        name: ref.male.afr.american
+        type: numerical
+        norm: batch
+        preprocessing:
+            normalization: zscore
+        loss:
+            type: mean_squared_error
+    -
+        name: ref.male.afr.asian
+        type: numerical
+        norm: batch
+        preprocessing:
+            normalization: zscore
+        loss:
+            type: mean_squared_error
+    -
+        name: ref.male.afr.european
+        type: numerical
+        norm: batch
+        preprocessing:
+            normalization: zscore
+        loss:
+            type: mean_squared_error
+    -
+        name: ref.mu.1.yucha2017.prob.vietnam.m
+        type: numerical
+        norm: batch
+        preprocessing:
+            normalization: zscore
+        loss:
+            type: mean_squared_error
+    -
+        name: ref.Newman_1960_Pl_1
+        type: numerical
+        norm: batch
+        preprocessing:
+            normalization: zscore
+        loss:
+            type: mean_squared_error
+    -
+        name: ref.Newman_1960_Pl_5_female
+        type: numerical
+        norm: batch
+        preprocessing:
+            normalization: zscore
+        loss:
+            type: mean_squared_error
+    -
+        name: ref.Newman_Snow_1942.Pl_307_male
+        type: numerical
+        norm: batch
+        preprocessing:
+            normalization: zscore
+        loss:
+            type: mean_squared_error
+    -
+        name: ref.Newman_Snow_1942_Pl_308_male_83_ct27
+        type: numerical
+        norm: batch
+        preprocessing:
+            normalization: zscore
+        loss:
+            type: mean_squared_error
+    -
+        name: ref.Newman_Snow_1942_Pl_309.sex.na
+        type: numerical
+        norm: batch
+        preprocessing:
+            normalization: zscore
+        loss:
+            type: mean_squared_error
+    -
+        name: ref.Newman_Snow_1942_Pl_310_male_lu67
+        type: numerical
+        norm: batch
+        preprocessing:
+            normalization: zscore
+        loss:
+            type: mean_squared_error
+    -
+        name: ref.Newman_Snow_1942_Pl_311_male_lu25
+        type: numerical
+        norm: batch
+        preprocessing:
+            normalization: zscore
+        loss:
+            type: mean_squared_error
+    -
+        name: ref.Newman_Snow_1942_Pl_312_male_lu92
+        type: numerical
+        norm: batch
+        preprocessing:
+            normalization: zscore
+        loss:
+            type: mean_squared_error
+    -
+        name: ref.ocme.ma.1a.yucha2017.prob.m.asian
+        type: numerical
+        norm: batch
+        preprocessing:
+            normalization: zscore
+        loss:
+            type: mean_squared_error
+    -
+        name: ref.ocme.ma.2.yucha2017.prob.m.asian
+        type: numerical
+        norm: batch
+        preprocessing:
+            normalization: zscore
+        loss:
+            type: mean_squared_error
+    -
+        name: ref.si.male.jamestown
+        type: numerical
+        norm: batch
+        preprocessing:
+            normalization: zscore
+        loss:
+            type: mean_squared_error
+    -
+        name: ref.si.woman.1660
+        type: numerical
+        norm: batch
+        preprocessing:
+            normalization: zscore
+        loss:
+            type: mean_squared_error
+    -
+        name: ref.Snow_1941_F3_4_female
+        type: numerical
+        norm: batch
+        preprocessing:
+            normalization: zscore
+        loss:
+            type: mean_squared_error
+    -
+        name: ref.Snow_1941_F5_6_male_2529
+        type: numerical
+        norm: batch
+        preprocessing:
+            normalization: zscore
+        loss:
+            type: mean_squared_error
+    -
+        name: ref.Snow_1941.F7_8_female_m2548
+        type: numerical
+        norm: batch
+        preprocessing:
+            normalization: zscore
+        loss:
+            type: mean_squared_error
+    -
+        name: ref.sos.constantin.jacic.europe
+        type: numerical
+        norm: batch
+        preprocessing:
+            normalization: zscore
+        loss:
+            type: mean_squared_error
+    -
+        name: ref.sos.girolemo.zini.europe
+        type: numerical
+        norm: batch
+        preprocessing:
+            normalization: zscore
+        loss:
+            type: mean_squared_error
+    -
+        name: ref.sos.grez.uirmeny.european
+        type: numerical
+        norm: batch
+        preprocessing:
+            normalization: zscore
+        loss:
+            type: mean_squared_error
+    -
+        name: ref.st.augustine.black.male
+        type: numerical
+        norm: batch
+        preprocessing:
+            normalization: zscore
+        loss:
+            type: mean_squared_error
+    -
+        name: ref.Wm_Webb_1939_Pl_117
+        type: numerical
+        norm: batch
+        preprocessing:
+            normalization: zscore
+        loss:
+            type: mean_squared_error
+    -
+        name: ref.Wm_Webb_1939_Pl_122
+        type: numerical
+        norm: batch
+        preprocessing:
+            normalization: zscore
+        loss:
+            type: mean_squared_error
+
+output_features:
+    -
+        name: origin
+        type: category
+        top_k: 1
+        loss:
+            type: softmax_cross_entropy        
