@@ -137,9 +137,9 @@ biplot_2d(skulls.pca, # without log transformation
 
 # different view
 g2 <- ggbiplot(skulls.pca, obs.scale = .05, var.scale = 1,labels.size=2, 
-               groups = skulls$origin, ellipse = TRUE, 
+               groups = color.category.fine, ellipse = TRUE, 
                circle = FALSE,
-               labels = skulls$label)
+               labels = color.category.fine)
 g2 <- g2 + scale_color_discrete(name = '')
 g2 <- g2 + theme(legend.direction = 'horizontal', 
                  legend.position = 'top') +
